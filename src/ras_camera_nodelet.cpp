@@ -12,7 +12,7 @@ void CameraNodelet::onInit()
   ros::NodeHandle& nh = getMTNodeHandle(); // Or use: getNodeHandle();
   ros::NodeHandle& nh_priv = getMTPrivateNodeHandle(); // Or use: getPrivateNodeHandle();
 
-  depth_registered_sub_ = nh.subscribe("camera/depth_registered/points", 1,
+  depth_registered_sub_ = nh.subscribe("/camera/depth_registered/points", 1,
                                  &CameraNodelet::depthRegisteredCallback, this);
 }
 
