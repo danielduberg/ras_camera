@@ -1,0 +1,7 @@
+<library path="lib/libras_camera_nodelet">
+    <class name="ras_camera/Camera" type="ras_camera::CameraNodelet" base_class_type="nodelet::Nodelet">
+        <description>
+            This is my nodelet.
+        </description>
+    </class>
+</library>
