@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <!-- Start nodelet manager and Realsense SR300 RBG-D nodelet -->
+    <include file="$(find ras_camera)/launch/sr300_nodelet_rgbd.launch" />
+    
+    <!-- Start ros_camera node. Will be in a different process so can not share memory with the camera nodes.
+    -->
+    <node pkg="ras_camera" type="ras_camera_node" name="ras_camera_node" output="screen" />
+
+</launch>
