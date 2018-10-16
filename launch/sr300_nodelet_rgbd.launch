@@ -27,4 +27,8 @@
         <arg name="sw_registered_processing"        default="true" />
     </include>
 
+    <!-- Load our paramters from the parameter file -->
+    <node pkg="dynamic_reconfigure" type="dynparam" name="dynamic_reconfigure_load" 
+          args="load /camera/driver $(find ras_camera)/params/camera.yaml" />
+
 </launch>

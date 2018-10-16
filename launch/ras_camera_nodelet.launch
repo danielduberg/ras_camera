@@ -9,5 +9,5 @@
         Will be in 'camera' namespace
     -->
     <node pkg="nodelet" type="nodelet" name="ras_camera" args="load ras_camera/Camera camera/camera_nodelet_manager" output="screen" />
-
+    
 </launch>

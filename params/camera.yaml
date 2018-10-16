@@ -17,7 +17,7 @@ dictitems:
   f200_confidence_threshold: 3
   f200_filter_option: 5
   f200_laser_power: 16
-  f200_motion_range: 100
+  f200_motion_range: 25
   groups: !!python/object/new:dynamic_reconfigure.encoding.Config
     dictitems:
       color_backlight_compensation: 0
@@ -37,7 +37,7 @@ dictitems:
       f200_confidence_threshold: 3
       f200_filter_option: 5
       f200_laser_power: 16
-      f200_motion_range: 100
+      f200_motion_range: 0
       groups: !!python/object/new:dynamic_reconfigure.encoding.Config
         state: []
       id: 0
