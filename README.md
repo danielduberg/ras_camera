@@ -108,7 +108,7 @@ You have to have a nodelet manager. All the nodes that you want to be able to co
 
 ### Pros of using nodelets compared to nodes
 * Nodes that are under the same manager is running in the same process. This means that they can subscribe and publish to each other without having to copy the data.
-* You code goes super fast, VROM VROM!!!
+* Your code goes super fast, VROM VROM!!!
 * I will fill this in when I think of something.
 
 ### Cons of using nodelets compared to nodes
