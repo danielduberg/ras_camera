@@ -14,7 +14,7 @@ echo "- git: {local-name: ras_project/ras_camera, uri: 'https://github.com/danie
 # Merge ras_camera.rosinstall into your .rosinstall file
 wstool merge ras_camera.rosinstall
 
-# Remove the ras_camera.rosinstall file
+# Clean up. Remove the ras_camera.rosinstall file since we do not need it anymore
 rm ras_camera.rosinstall
 
 # Update all repos in .rosinstall
