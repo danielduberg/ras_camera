@@ -106,7 +106,7 @@ You can read why to use nodelets [here](http://www.clearpathrobotics.com/assets/
 ### What you need to know when using nodelets
 You have to have a nodelet manager. All the nodes that you want to be able to communicate with each other with zero copy between them has to be running other the same nodelet manager. All the nodes that are running under a manager are running in the same process and therefore can share memory between each other. You should not change a message after you have published it or recieved it, if you want to do that you should create a copy and change that. This is because you are sending out a pointer to a memory adress, so all subscribers in the same nodelet will use the exact same memory for that message. So if you alter the message in one node it will be altered for all nodes.
 
-***I am _not_ suggesting that you should make all of your packages into nodelets. Only the one that it is using the camera. This is because more things can go wrong when using nodelets, so you will spend more time debugging.***
+**I am _not_ suggesting that you should make all of your packages into nodelets. Only the one that it is using the camera. This is because more things can go wrong when using nodelets, so you will spend more time debugging.**
 
 ### Pros of using nodelets compared to nodes
 * Nodes that are under the same manager is running in the same process. This means that they can subscribe and publish to each other without having to copy the data.
