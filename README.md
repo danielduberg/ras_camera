@@ -4,6 +4,8 @@ We created this package for you such that you will have a better experience with
 Below you can read what you can do with this package and how to get it running. We have also provided some code, in the `ras_camera/src` folder, such that you can use nodelets instead for the camera to increase performance. If you take a look in the `ras_camera/src` you will see a good way of writing your code such that it is easy to switch from node to nodelet.
 
 ## Installation
+### Option #1
+Using [wstool](http://wiki.ros.org/wstool) and rosinstall:
 ```bash
 # Go to src in catkin workspace
 cd ~/catkin_ws/src
@@ -20,6 +22,22 @@ rm ras_camera.rosinstall
 # Update all repos in .rosinstall
 # This will download ras_camera into ~/catkin_ws/src/ras_project/ras_camera
 wstool update
+
+# Go to root folder of catkin workspace
+cd ~/catkin_ws
+
+# Compile
+catkin_make
+```
+
+### Option #2
+Clone it from Github:
+```bash
+# Go to src/ras_project in catkin workspace (or just src if you want the package there)
+cd ~/catkin_ws/src/ras_project
+
+# Clone the repository
+git clone https://github.com/danielduberg/ras_camera.git
 
 # Go to root folder of catkin workspace
 cd ~/catkin_ws
