@@ -39,7 +39,7 @@ catkin_make
 ```
 which you have done so far.
 
-By using the `Release` build type you turn on most (all?) of the optimizations that the compiler can use when compiling your code. Note that using the `Release` build type you do not get all the output that you will get using a different build type. So if you are debugging something it might be useful to use the `debug` build type instead:
+By using the `Release` build type you turn on most (all?) of the optimizations that the compiler can use when compiling your code. Note that using the `Release` build type you do not get all the output that you will get using a different build type. So if you are debugging something it might be useful to use the `Debug` build type instead:
 ```bash
 catkin_make -DCMAKE_BUILD_TYPE=Debug
 ```
