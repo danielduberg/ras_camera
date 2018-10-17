@@ -1,5 +1,5 @@
 # Why this package
-We created this package for you such that you will have a better experience with the Intel Realsense SR300 camera running on the Intel NUC. As with the default settings the camera will use most of the CPU power on the NUC.
+We created this package for you such that you will have a better experience with the Intel Realsense SR300 camera running on the Intel NUC. As the default settings for the camera will use most of the CPU power on the NUC.
 
 Below you can read what you can do with this package and how to get it running. We have also provided some code, in the `ras_camera/src` folder, such that you can use nodelets instead for the camera to increase performance. If you take a look in the `ras_camera/src` you will see a good way of writing your code such that it is easy to switch from node to nodelet.
 
