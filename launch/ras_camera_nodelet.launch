@@ -3,7 +3,7 @@
 <launch>
 
     <!-- Start nodelet manager and Realsense SR300 RBG-D nodelet -->
-    <include file="$(find ras_camera)/launch/sr300_nodelet_rgbd.launch" />
+    <include file="$(find ras_camera)/launch/sr300_rgbd_nodelet.launch" />
     
     <!-- Start ros_camera nodelet. Will be in a the same process as the camera nodes and can therefore share memory with them.
         Will be in 'camera' namespace
